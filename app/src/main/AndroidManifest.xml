@@ -18,6 +18,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".GPSActivity" />
+        <activity android:name=".GyroActivity" />
+        <activity android:name=".MagnoActivity" />
+        <activity android:name=".AccActivity" />
+        <activity android:name=".ProxActivity" />
+        <activity android:name=".AirActivity1" />
+        <activity android:name=".AirActivity2" />
+        <activity android:name=".LightActivity" />
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".SoundActivity" />
+        <activity android:name=".MicActivity"></activity>
     </application>
 
 </manifest>

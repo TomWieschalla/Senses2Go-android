@@ -13,8 +13,136 @@
     tools:context="de.adesso.wieschalla.senses2go.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:text="GPS"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/gpsButton"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/background_light"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Gyroskop"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gyroButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/background_light"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Magnetometer"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/magnoButon"
+        android:layout_below="@+id/gpsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/background_light"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Beschleunigung"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/accButton"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/magnoButon"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/background_light"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Proximity"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/proxButton"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/magnoButon"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/background_light"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Luftfeuchtigkeit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/airButton1"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/accButton"
+        android:layout_alignStart="@+id/magnoButon"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/background_light"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Luftdruck"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/airButton2"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/airButton1"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/background_light"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Lichtintensität"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lightButton"
+        android:layout_alignBaseline="@+id/airButton2"
+        android:layout_alignBottom="@+id/airButton2"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/background_light"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Kamera"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cameraButton"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/airButton2"
+        android:layout_alignStart="@+id/airButton1"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/background_light"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Lautsprecher"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/soundbutton"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cameraButton"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/background_light"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Mikrofon"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/micButton"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cameraButton"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/background_light"
+        android:textAllCaps="false" />
+
 </RelativeLayout>
