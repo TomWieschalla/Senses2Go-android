@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="de.adesso.wieschalla.senses2go">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -18,17 +21,41 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GPSActivity" />
-        <activity android:name=".GyroActivity" />
-        <activity android:name=".MagnoActivity" />
-        <activity android:name=".AccActivity" />
-        <activity android:name=".ProxActivity" />
-        <activity android:name=".AirActivity1" />
-        <activity android:name=".AirActivity2" />
-        <activity android:name=".LightActivity" />
-        <activity android:name=".CameraActivity" />
-        <activity android:name=".SoundActivity" />
-        <activity android:name=".MicActivity"></activity>
+        <activity
+            android:name=".GPSActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".GyroActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".MagnoActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".AccActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ProxActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".AirActivity1"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".AirActivity2"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".LightActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".CameraActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".SoundActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".MicActivity"
+            android:parentActivityName=".MainActivity"></activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDpalyzShf2bdCwNcwxPK3B73qMYczqY5Q"/>
     </application>
-
 </manifest>

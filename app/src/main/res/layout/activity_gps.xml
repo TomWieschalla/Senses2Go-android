@@ -10,4 +10,58 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="de.adesso.wieschalla.senses2go.GPSActivity">
 
+    <TextView
+        android:text="0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/text1"
+        android:layout_width="150dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/text2"
+        android:layout_width="150dp"
+        android:textAllCaps="true"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <fragment
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/mapF"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/text2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:text="Breitengrad:"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Längengrad:"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/textView4"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/text1"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
