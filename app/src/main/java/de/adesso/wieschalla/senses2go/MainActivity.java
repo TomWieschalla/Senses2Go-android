@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button magnoButton;
     Button accButton;
     Button proxButton;
-    Button airButton1;
     Button airButton2;
     Button lightButton;
     Button cameraButton;
@@ -55,9 +54,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         proxButton = (Button) findViewById(R.id.proxButton);
         proxButton.setOnClickListener(MainActivity.this);
 
-        airButton1 = (Button) findViewById(R.id.airButton1);
-        airButton1.setOnClickListener(MainActivity.this);
-
         airButton2 = (Button) findViewById(R.id.airButton2);
         airButton2.setOnClickListener(MainActivity.this);
 
@@ -81,7 +77,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         checkViewAndPushToSpecificView(view, magnoButton, MagnoActivity.class);
         checkViewAndPushToSpecificView(view,accButton, AccActivity.class);
         checkViewAndPushToSpecificView(view, proxButton, ProxActivity.class);
-        checkViewAndPushToSpecificView(view, airButton1, AirActivity1.class);
         checkViewAndPushToSpecificView(view, airButton2, AirActivity2.class);
         checkViewAndPushToSpecificView(view, lightButton, LightActivity.class);
         checkViewAndPushToSpecificView(view, cameraButton, CameraActivity.class);

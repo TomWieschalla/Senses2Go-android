@@ -48,7 +48,7 @@ public class GPSActivity extends AppCompatActivity implements OnMapReadyCallback
         }
 
         setContentView(R.layout.activity_gps);
-        GPSActivity.this.setTitle("GPS Position");
+        GPSActivity.this.setTitle("GPS-Sensor");
 
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
 
@@ -76,7 +76,7 @@ public class GPSActivity extends AppCompatActivity implements OnMapReadyCallback
         };
 
 
-        if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if ( Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.INTERNET}, 10);
             return;
         }

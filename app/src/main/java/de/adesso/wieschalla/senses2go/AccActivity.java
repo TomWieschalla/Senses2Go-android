@@ -21,7 +21,7 @@ public class AccActivity extends AppCompatActivity implements SensorEventListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acc);
-        AccActivity.this.setTitle("Beschleunigung");
+        AccActivity.this.setTitle("Beschleunigungssensor");
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);

@@ -31,7 +31,7 @@ public class MagnoActivity extends AppCompatActivity implements SensorEventListe
         }
 
         setContentView(R.layout.activity_magno);
-        MagnoActivity.this.setTitle("Erdfeldstärke");
+        MagnoActivity.this.setTitle("Magnetometer");
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);

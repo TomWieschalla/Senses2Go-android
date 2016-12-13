@@ -10,4 +10,29 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="de.adesso.wieschalla.senses2go.CameraActivity">
 
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button_image"/>
+
+    <Button
+        android:id="@+id/button_image"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:onClick="takePicture"
+        android:text="Take a picture!"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button_image2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:onClick="save"
+        android:text="Save to Media!"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>

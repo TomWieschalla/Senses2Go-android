@@ -40,7 +40,7 @@ public class GyroActivity extends AppCompatActivity implements SensorEventListen
         }
 
 
-        GyroActivity.this.setTitle("Rotation");
+        GyroActivity.this.setTitle("Rotationssensor");
     }
 
     @Override

@@ -25,7 +25,7 @@ public class ProxActivity extends AppCompatActivity implements SensorEventListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prox);
-        ProxActivity.this.setTitle("Entfernung");
+        ProxActivity.this.setTitle("Näherungssensor");
 
         // back button
         if (getSupportActionBar() != null) {
@@ -57,15 +57,16 @@ public class ProxActivity extends AppCompatActivity implements SensorEventListen
         if (sensorEvent.sensor.getType() == Sensor.TYPE_PROXIMITY) {
             if (sensorEvent != null) {
                 float x = sensorEvent.values[0];
-                textView1.setText(Float.toString(x));
                 if (x == 0.0) {
                     getWindow().getDecorView().setBackgroundColor(Color.BLACK);
                     textView1.setTextColor(Color.WHITE);
                     textView2.setTextColor(Color.WHITE);
+                    textView1.setText("near");
                 } else {
                     getWindow().getDecorView().setBackgroundColor(Color.WHITE);
                     textView1.setTextColor(Color.BLACK);
                     textView2.setTextColor(Color.BLACK);
+                    textView1.setText("far");
                 }
             }
         }
